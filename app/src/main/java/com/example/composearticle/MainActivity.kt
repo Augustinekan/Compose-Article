@@ -3,12 +3,15 @@ package com.example.composearticle
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.composearticle.ui.theme.ComposeArticleTheme
 
@@ -32,6 +35,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ComposeArticle(){
-
+Column {
+    ComposeImage()
 }
-
+}
+@Composable
+fun ComposeImage(){
+    val imageResource = painterResource(id =R.drawable.bg_compose_background )
+    Image(painter = imageResource, contentDescription = "Compose Image")
+}
