@@ -71,6 +71,7 @@ fun PrimaryText(modifier: Modifier = Modifier){
     Text(text = stringResource(id = R.string.JCIsAModernToolkit), fontSize = 16.sp, modifier = modifier)
 }
 
+
 @Composable
 fun SecondaryText(modifier: Modifier = Modifier){
     Text(text = stringResource(id = R.string.InThisTutorialYouBuild), modifier = modifier.padding(vertical = 16.dp), fontSize = 16.sp)
